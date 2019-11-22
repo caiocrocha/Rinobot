@@ -34,11 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/GameFunctions.h" />
 		<Unit filename="include/Robot.h" />
-		<Unit filename="include/VSSS.h" />
+		<Unit filename="include/Utils.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/GameFunctions.cpp" />
 		<Unit filename="src/Robot.cpp" />
-		<Unit filename="src/VSSS.cpp" />
+		<Unit filename="src/Utils.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

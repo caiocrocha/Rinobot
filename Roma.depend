@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1574201509 source:c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\main.cpp
+	<iostream>
+	<windows.h>
+	<time.h>
+	"Robot.h"
+	"Utils.h"
+	"GameFunctions.h"
+
+1573937458 c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\include\robot.h
+
+1573602336 c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\include\vsss.h
+	"Robot.h"
+	<iostream>
+	<string>
+
+1574199339 source:c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\src\robot.cpp
+	<iostream>
+	<cmath>
+	"Robot.h"
+	"Utils.h"
+
+1573602339 source:c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\src\vsss.cpp
+	<iostream>
+	<math.h>
+	<string>
+	"VSSS.h"
+	"Robot.h"
+
+1574200568 source:c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\src\gamefunctions.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+	"GameFunctions.h"
+	"Robot.h"
+
+1574199339 c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\include\gamefunctions.h
+	"Robot.h"
+	"Utils.h"
+	<iostream>
+
+1574199368 c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\include\utils.h
+	"Robot.h"
+
+1574199339 source:c:\users\peterson simone\documents\codigos\codeblocksfiles\traineevsss\roma\src\utils.cpp
+	<iostream>
+	<cmath>
+	"Utils.h"
+	"Robot.h"
+

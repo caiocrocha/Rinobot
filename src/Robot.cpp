@@ -1,17 +1,19 @@
 #include <iostream>
+#include <cmath>
 #include "Robot.h"
+#include "Utils.h"
 
 using namespace std;
 
 Robot::Robot()
 {
     cout << "Criando objeto Robot" << endl;
-    numeroMotores=0;
-    numeroSensores=0;
-    bateria=0;
-    orientacao.x=0;
-    orientacao.y=0;
-    orientacao.theta=0;
+    numId = -1;
+    posicao = {0, 0, 0};
+    numMotores = 0;
+    numSensores = 0;
+    bateria = 0;
+    comunicacao = false;
 }
 
 Robot::~Robot()
@@ -19,14 +21,26 @@ Robot::~Robot()
     cout << "Destruindo objeto Robot" << endl;
 }
 
-void Robot::locomocao(velRoda v)
+void Robot::setAlfa()
 {
-    if((v.Esquerda>0)&&(v.Direita>0))
-        cout << "Robo andando para frente." << endl;
-    else if((v.Esquerda<0)&&(v.Direita<0))
-        cout << "Robo andando para tras." << endl;
-    if(v.Esquerda>v.Direita)
-        cout << "Robo fazendo curva pra direita." << endl;
-    else if(v.Esquerda<v.Direita)
-        cout << "Robo fazendo curva pra esquerda." << endl;
+    alfa = round((atan((meta.y - posicao.y)/(meta.x - posicao.x)))*180/3.14159);
+    //alfa (angulo da reta) eh o arco tangente do coef angular da reta
+    if(alfa < 0)
+        alfa += 180;
+}
+
+void Robot::girar(bool sentido)
+{
+    if(sentido)
+    {
+        velocidade.dir = 100;
+        velocidade.esq = -100;
+        cout << "\tRobo girando no sentido anti-horario" << endl;
+    }
+    else
+    {
+        velocidade.dir = -100;
+        velocidade.esq = 100;
+        cout << "\tRobo girando no sentido horario" << endl;
+    }
 }
